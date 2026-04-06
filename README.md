@@ -1,6 +1,9 @@
 # Blog Application API
 
-Backend-only MVC blog API built with Express, MongoDB, Mongoose, JWT authentication, role-based authorization, groups, and ImageKit uploads.
+# Vercel deployment link
+https://blog-backend-node-express-mongodb.vercel.app/
+
+Backend MVC blog API built with Express, MongoDB, Mongoose, JWT authentication, role-based authorization, groups, and ImageKit uploads.
 
 ## Project Structure
 
@@ -245,4 +248,3 @@ GET /posts/my-posts?page=1&limit=10
 ```bash
 npm run check
 ```
-# blog-backend---node-express-mongodb
