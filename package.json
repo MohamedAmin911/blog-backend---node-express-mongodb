@@ -1,0 +1,34 @@
+{
+  "name": "node-final-task",
+  "version": "1.0.0",
+  "description": "MVC blog application backend with auth, groups, posts, and ImageKit uploads.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "check": "node -e \"require('./app'); console.log('Application loaded successfully')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@imagekit/nodejs": "^7.3.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.2",
+    "joi": "^18.1.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "slugify": "^1.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
