@@ -39,7 +39,7 @@ npm run dev
 4. Base URL for testing
 
 ```text
-http://localhost:3000
+https://blog-backend-node-express-mongodb.vercel.app
 ```
 
 ## Important Notes
@@ -66,14 +66,14 @@ DNS_SERVERS=8.8.8.8,1.1.1.1
 ### Health
 
 ```http
-GET http://localhost:3000/
+GET https://blog-backend-node-express-mongodb.vercel.app/
 ```
 
 ### Auth
 
 ```http
-POST http://localhost:3000/auth/register
-POST http://localhost:3000/auth/login
+POST https://blog-backend-node-express-mongodb.vercel.app/auth/register
+POST https://blog-backend-node-express-mongodb.vercel.app/auth/login
 ```
 
 Register body:
@@ -98,11 +98,11 @@ Login body:
 ### Users
 
 ```http
-GET http://localhost:3000/users
-GET http://localhost:3000/users/:id
-POST http://localhost:3000/users
-PATCH http://localhost:3000/users/:id
-DELETE http://localhost:3000/users/:id
+GET https://blog-backend-node-express-mongodb.vercel.app/users
+GET https://blog-backend-node-express-mongodb.vercel.app/users/:id
+POST https://blog-backend-node-express-mongodb.vercel.app/users
+PATCH https://blog-backend-node-express-mongodb.vercel.app/users/:id
+DELETE https://blog-backend-node-express-mongodb.vercel.app/users/:id
 ```
 
 Create user body:
@@ -129,19 +129,19 @@ Update user body:
 ### Posts
 
 ```http
-GET http://localhost:3000/posts
-GET http://localhost:3000/posts/:id
-GET http://localhost:3000/posts/my-posts
-GET http://localhost:3000/posts/user/:userId
-POST http://localhost:3000/posts
-PATCH http://localhost:3000/posts/:id
-DELETE http://localhost:3000/posts/:id
+GET https://blog-backend-node-express-mongodb.vercel.app/posts
+GET https://blog-backend-node-express-mongodb.vercel.app/posts/:id
+GET https://blog-backend-node-express-mongodb.vercel.app/posts/my-posts
+GET https://blog-backend-node-express-mongodb.vercel.app/posts/user/:userId
+POST https://blog-backend-node-express-mongodb.vercel.app/posts
+PATCH https://blog-backend-node-express-mongodb.vercel.app/posts/:id
+DELETE https://blog-backend-node-express-mongodb.vercel.app/posts/:id
 ```
 
 Create post:
 
 ```http
-POST http://localhost:3000/posts
+POST https://blog-backend-node-express-mongodb.vercel.app/posts
 Authorization: Bearer YOUR_TOKEN
 Content-Type: multipart/form-data
 ```
@@ -171,16 +171,16 @@ To append new images on update, send `PATCH /posts/:id` as `multipart/form-data`
 ### Groups
 
 ```http
-GET http://localhost:3000/groups
-GET http://localhost:3000/groups/:id
-POST http://localhost:3000/groups
-PATCH http://localhost:3000/groups/:id
-DELETE http://localhost:3000/groups/:id
-POST http://localhost:3000/groups/:id/members
-DELETE http://localhost:3000/groups/:id/members
-POST http://localhost:3000/groups/:id/admins
-DELETE http://localhost:3000/groups/:id/admins
-PATCH http://localhost:3000/groups/:id/permissions/posting
+GET https://blog-backend-node-express-mongodb.vercel.app/groups
+GET https://blog-backend-node-express-mongodb.vercel.app/groups/:id
+POST https://blog-backend-node-express-mongodb.vercel.app/groups
+PATCH https://blog-backend-node-express-mongodb.vercel.app/groups/:id
+DELETE https://blog-backend-node-express-mongodb.vercel.app/groups/:id
+POST https://blog-backend-node-express-mongodb.vercel.app/groups/:id/members
+DELETE https://blog-backend-node-express-mongodb.vercel.app/groups/:id/members
+POST https://blog-backend-node-express-mongodb.vercel.app/groups/:id/admins
+DELETE https://blog-backend-node-express-mongodb.vercel.app/groups/:id/admins
+PATCH https://blog-backend-node-express-mongodb.vercel.app/groups/:id/permissions/posting
 ```
 
 Create group body:
