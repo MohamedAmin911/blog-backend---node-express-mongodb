@@ -245,4 +245,3 @@ GET /posts/my-posts?page=1&limit=10
 ```bash
 npm run check
 ```
-# blog-backend---node-express-mongodb
